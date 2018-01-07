@@ -9,6 +9,7 @@ docker build -t gemini ./
 ```
 docker run -dit --restart always \
 -v /home/ubuntu/mounts/gemini/:/mount/prices/logs/ \
+-v $HOME/.aws:/home/.aws \
 -h "ethbtc2" \
 --name "ethbtc2" \
 -e LOG_MOUNT="/mount/prices/logs" \
