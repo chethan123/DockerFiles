@@ -4,6 +4,8 @@ docker build -t gemini ./
 ```
 
 # Running container to start listening
+* Create a mount directory on host to collect logs, `/home/ubuntu/mounts/gemini/` below and run,
+
 ```
 docker run -dit --restart always \
 -v /home/ubuntu/mounts/gemini/:/mount/prices/logs/ \
